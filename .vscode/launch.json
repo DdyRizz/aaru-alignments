@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Backend (npm start)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start"],
+      "cwd": "${workspaceFolder}/warp-coding-app/backend",
+      "port": 9229
+    },
+    {
+      "name": "Attach to Backend (Process)",
+      "type": "node",
+      "request": "attach",
+      "processId": "${command:PickProcess}",
+      "cwd": "${workspaceFolder}/warp-coding-app/backend"
+    },
+    {
+      "name": "Launch ai-service (Python)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/warp-coding-app/ai-service/app/main.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/warp-coding-app/ai-service"
+    }
+  ]
+}

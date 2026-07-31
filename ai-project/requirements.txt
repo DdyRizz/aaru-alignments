@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+# Add additional runtime dependencies required by the project here
+transformers
+torch
+# Add additional runtime dependencies required by the project here

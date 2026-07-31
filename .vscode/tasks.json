@@ -1,0 +1,52 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "npm: install (backend)",
+      "type": "shell",
+      "command": "npm install",
+      "problemMatcher": [],
+      "options": { "cwd": "${workspaceFolder}/warp-coding-app/backend" }
+    },
+    {
+      "label": "npm: start (backend)",
+      "type": "shell",
+      "command": "npm start",
+      "problemMatcher": [],
+      "options": { "cwd": "${workspaceFolder}/warp-coding-app/backend" },
+      "isBackground": true
+    },
+    {
+      "label": "pip: install (ai-service)",
+      "type": "shell",
+      "command": "python -m pip install -r requirements.txt",
+      "problemMatcher": [],
+      "options": { "cwd": "${workspaceFolder}/warp-coding-app/ai-service" }
+    },
+    {
+      "label": "python: run (ai-service)",
+      "type": "shell",
+      "command": "python app/main.py",
+      "problemMatcher": [],
+      "options": { "cwd": "${workspaceFolder}/warp-coding-app/ai-service" },
+      "isBackground": true
+    },
+    {
+      "label": "docker-compose: up",
+      "type": "shell",
+      "command": "docker-compose up --build",
+      "problemMatcher": [],
+      "options": { "cwd": "${workspaceFolder}/warp-coding-app" }
+    },
+    {
+      "label": "Run All Services",
+      "dependsOn": [
+        "npm: install (backend)",
+        "pip: install (ai-service)",
+        "npm: start (backend)",
+        "python: run (ai-service)"
+      ],
+      "dependsOrder": "sequence"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Visual Studio
+.vs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+env/
+ENV/
+
+# Node
+node_modules/
+
+# OS
+*.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+docker-compose.override.yml

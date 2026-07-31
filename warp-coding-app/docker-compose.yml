@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - ./backend:/app
+
+  frontend:
+    image: python:3.11-slim
+    command: python -m http.server 8080
+    working_dir: /usr/src/app
+    volumes:
+      - ./frontend:/usr/src/app:ro
+    ports:
+      - "8080:8080"

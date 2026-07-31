@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Launch Backend (webhook.js)",
+      "program": "${workspaceFolder}/backend/webhook.js",
+      "cwd": "${workspaceFolder}/backend",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "pwa-node",
+      "request": "attach",
+      "name": "Attach to Backend (localhost:9229)",
+      "port": 9229,
+      "restart": false,
+      "cwd": "${workspaceFolder}/backend"
+    }
+  ]
+}
