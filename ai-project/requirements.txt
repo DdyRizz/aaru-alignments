@@ -4,3 +4,7 @@ uvicorn[standard]
 transformers
 torch
 # Add additional runtime dependencies required by the project here
+numpy
+faiss-cpu
+streamlit
+requests
