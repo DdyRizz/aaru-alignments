@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warp Coding App Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-code"></i> Warp Coding App</h1>
+            <p>Transform your coding journal into engaging social media content</p>
+        </header>
+
+        <main class="main-content">
+            <div class="dashboard-grid">
+                <!-- Content Creation Panel -->
+                <section class="panel content-panel">
+                    <h2><i class="fas fa-edit"></i> Create Content</h2>
+                    <form id="contentForm" class="content-form">
+                        <div class="form-group">
+                            <label for="content">Journal Entry</label>
+                            <textarea 
+                                id="content" 
+                                name="content" 
+                                placeholder="Write your coding journal entry here..."
+                                rows="6"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="archetype">Content Type</label>
+                            <select id="archetype" name="archetype" required>
+                                <option value="">Select content type...</option>
+                                <optgroup label="TikTok">
+                                    <option value="coding-tips">Coding Tips</option>
+                                    <option value="code-review">Code Review</option>
+                                    <option value="debugging">Debugging</option>
+                                </optgroup>
+                                <optgroup label="Threads">
+                                    <option value="tech-news">Tech News</option>
+                                    <option value="tutorial">Tutorial</option>
+                                    <option value="industry-insights">Industry Insights</option>
+                                </optgroup>
+                                <optgroup label="LinkedIn">
+                                    <option value="career-advice">Career Advice</option>
+                                    <option value="project-showcase">Project Showcase</option>
+                                </optgroup>
+                                <optgroup label="Twitter">
+                                    <option value="quick-tips">Quick Tips</option>
+                                    <option value="tech-quotes">Tech Quotes</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hashtags">Custom Hashtags (optional)</label>
+                            <input 
+                                type="text" 
+                                id="hashtags" 
+                                name="hashtags" 
+                                placeholder="#coding #programming #developer"
+                            >
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Process & Post
+                        </button>
+                    </form>
+                </section>
+
+                <!-- Platform Status Panel -->
+                <section class="panel status-panel">
+                    <h2><i class="fas fa-chart-bar"></i> Platform Status</h2>
+                    <div class="platform-status">
+                        <div class="platform-item">
+                            <i class="fab fa-tiktok"></i>
+                            <span>TikTok</span>
+                            <div class="status-indicator" id="tiktok-status">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </div>
+                        <div class="platform-item">
+                            <i class="fab fa-threads"></i>
+                            <span>Threads</span>
+                            <div class="status-indicator" id="threads-status">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </div>
+                        <div class="platform-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                            <div class="status-indicator" id="linkedin-status">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </div>
+                        <div class="platform-item">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                            <div class="status-indicator" id="twitter-status">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Posts Panel -->
+                <section class="panel posts-panel">
+                    <h2><i class="fas fa-history"></i> Recent Posts</h2>
+                    <div id="recentPosts" class="recent-posts">
+                        <div class="no-posts">
+                            <i class="fas fa-inbox"></i>
+                            <p>No posts yet. Create your first content!</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Analytics Panel -->
+                <section class="panel analytics-panel">
+                    <h2><i class="fas fa-analytics"></i> Analytics</h2>
+                    <div class="analytics-grid">
+                        <div class="metric">
+                            <div class="metric-value" id="totalPosts">0</div>
+                            <div class="metric-label">Total Posts</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="successRate">0%</div>
+                            <div class="metric-label">Success Rate</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="platformsUsed">0</div>
+                            <div class="metric-label">Platforms Used</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Loading Overlay -->
+        <div id="loadingOverlay" class="loading-overlay hidden">
+            <div class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Processing your content...</p>
+            </div>
+        </div>
+
+        <!-- Notification Toast -->
+        <div id="notification" class="notification hidden">
+            <i class="fas fa-check-circle"></i>
+            <span id="notificationMessage"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

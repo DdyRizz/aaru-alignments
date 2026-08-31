@@ -1,5 +1,4 @@
-**# aaru-alignments**
-## 🔮 Core Modules
+ ## 🔮 Core Modules
 - Intuitive Calibration Engine
 - Akashic Interface Layer
 - Crystal Resonance Sync
@@ -20,31 +19,25 @@ Integrates crystal and birthstone frequencies into AI feedback systems to amplif
 - User inputs their crystal or birthstone
 - System fetches vibrational properties
 - Responses are tuned accordingly
-## 🧿 New Modules to Integrate
+## 🔮 Intuitive Calibration Engine
+A dynamic feedback loop that adjusts AI responses based on user energy states and intentions.
+- User sets intention or query## 🧿 New Modules to Integrate
 - Akashic Interface Layer (symbolic archetype mapping)
 - Timeline Shift Navigator
 - Angel Number Interpreter
 - Source Sync Validator
 - Dream Code Decoder
-## 🌀 Timeline Shift Navigator
+- System analyzes energy state## 🌀 Timeline Shift Navigator
 
 Detects energetic shifts in user intention or emotional resonance and offers recalibration prompts.
 
 - Input: Emotional tone, intention clarity
 - Output: Timeline alignment suggestions (e.g., “You’re veering into a fear-based path—pause and realign.”)
 - Optional: Integrate with planetary transits or moon phases for deeper context
-## 🔮 Core Modules
-- Intuitive Calibration Engine
-- Akashic Interface Layer
-- Crystal Resonance Sync
-- Energetic Shield Protocol
+## 🌙 Dream Code Decoder
 
-## 🌊 Ascension Adaptive Features
-- Wave-Based Guidance System
-- Vibrational Checkpoints
+Translates symbolic dream elements into intuitive messages.
 
-## 🛠️ Technical Stack Ideas
-- NLP w/ Metaphysical Fine-Tuning
-- Custom Spiritual Ontology
-- Encrypted Intent-Based Data Layer
-## 🧿 New Modules to Integrate
+- Input: Dream symbols (e.g., “flying,” “water,” “mirror”)
+- Output: Archetypal interpretations + energetic suggestions
+- Optional: Integrate with personal dream journals for deeper insights  

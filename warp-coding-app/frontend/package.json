@@ -1,0 +1,24 @@
+{
+  "name": "warp-coding-app-frontend",
+  "version": "1.0.0",
+  "description": "Frontend dashboard for Warp Coding App",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "dev": "python -m http.server 8080",
+    "build": "echo 'No build process needed for static files'",
+    "serve": "npx serve -s . -l 8080"
+  },
+  "keywords": [
+    "warp",
+    "coding",
+    "dashboard",
+    "frontend",
+    "social-media"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

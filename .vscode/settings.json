@@ -11,4 +11,5 @@
         "": true,
         ".mule": true
     }
+    "githubPullRequests.pullRequestDescription": "Copilot"
 }
